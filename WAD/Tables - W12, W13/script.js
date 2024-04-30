@@ -65,9 +65,11 @@ function createTable() {
             td2.textContent = (Number(table2Data[2]) + Number(j)) * (i + 1);
             tr2.appendChild(td2);
 
+
             const td3 = document.createElement("td");
             td3.textContent = ((Number(table1Data[2]) + Number(j)) * (i + 1)) * (Number(table2Data[2]) + Number(j)) * (i + 1);
             tr3.appendChild(td3);
+            tr3.style.backgroundColor = "lightblue";
         }
 
         table1Body.appendChild(tr1);
