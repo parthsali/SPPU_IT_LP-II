@@ -1,4 +1,5 @@
 
+
 const handleSubmit = () => {
 
     // get the values of the input fields
@@ -6,6 +7,11 @@ const handleSubmit = () => {
     let username = document.getElementById("username").value;
     let email = document.getElementById("email").value;
     let phone = document.getElementById("phone").value;
+
+    if (name == "" || username == "" || email == "" || phone == "") {
+        alert("Please fill all the fields");
+        return;
+    }
 
 
     // get the users array from the local storage or an empty array if it is not present
