@@ -7,12 +7,14 @@ const handleSubmit = () => {
     let username = document.getElementById("username").value;
     let email = document.getElementById("email").value;
     let phone = document.getElementById("phone").value;
+    let address = document.getElementById("address").value;
+    let age = document.getElementById("age").value;
+    let profileImage = document.getElementById("profile").value;
 
     if (name == "" || username == "" || email == "" || phone == "") {
         alert("Please fill all the fields");
         return;
     }
-
 
     // get the users array from the local storage or an empty array if it is not present
     let users = JSON.parse(localStorage.getItem('users')) || [];
@@ -22,7 +24,10 @@ const handleSubmit = () => {
         name,
         username,
         email,
-        phone
+        phone,
+        address,
+        age,
+        profileImage
     }
 
     console.log(userData);

@@ -1,8 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost:27017/student')
@@ -41,6 +43,7 @@ const insertStudentMarks = async () => {
 // Display total count of documents and list all documents in browser
 app.get('/displayAllStudentMarks', async (req, res) => {
     try {
+
         const students = await StudentMarks.find();
         const count = await StudentMarks.countDocuments();
 
