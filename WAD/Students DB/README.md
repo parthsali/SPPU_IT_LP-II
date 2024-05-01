@@ -2,29 +2,6 @@
 
 This Node.js application provides a Student Marks Management System with functionalities to perform various operations using Express.js and MongoDB.
 
-## Setup Instructions
-
-Follow these steps to set up the project:
-
-1. Clone the repository to your local machine:
-
-   ```bash
-   git clone <repository-url>
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Make sure MongoDB is installed and running on your local machine.
-
-4. Start the server:
-   ```bash
-   npm run dev
-   ```
-
 ## Problem Statement
 
 Perform the following tasks using Node.js, Express.js, and MongoDB:
@@ -39,6 +16,52 @@ g) List the names of students who got more than 25 marks in all subjects in the 
 h) List the names of students who got less than 40 in both Maths and Science in the browser.
 i) Remove specified student document from the collection.
 j) Display the Students data in the browser in tabular format.
+
+## Setup Instructions
+
+1.  Clone the repository or Download ZIP File
+
+```bash
+git clone url
+```
+
+2.  Navigate to the `Client` directory:
+
+```bash
+cd Client
+```
+
+3.  Install the required packages using npm install:
+
+```bash
+npm install
+```
+
+4.  Run the project using npm run dev:
+
+```bash
+npm run dev
+```
+
+5.  Now, navigate to the `Server` directory:
+
+```bash
+cd Server
+```
+
+6.  Install the required packages using npm install:
+
+```bash
+npm install
+```
+
+7.  Change the URL of the database in the `index.js` file.
+
+8.  Run the project using npm run dev:
+
+```bash
+npm run dev
+```
 
 ## Testing the Output
 
