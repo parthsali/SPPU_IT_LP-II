@@ -1,0 +1,17 @@
+.register-container{
+    margin-top: 50px;
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container form{
+    padding: 30px;
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+    gap: 30px;
+    border: 2px solid black;
+}
