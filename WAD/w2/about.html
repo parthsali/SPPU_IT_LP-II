@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Mobile Website</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <style>
+        .ui-grid-c .ui-block-a,
+        .ui-grid-c .ui-block-b,
+        .ui-grid-c .ui-block-c,
+        .ui-grid-c .ui-block-d {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Media query for smaller screens */
+        @media screen and (max-width: 480px) {
+            .ui-grid-c .ui-block-a,
+            .ui-grid-c .ui-block-b,
+            .ui-grid-c .ui-block-c,
+            .ui-grid-c .ui-block-d {
+                width: 50%; /* Make each column take up 50% width on smaller screens */
+            }
+        }
+    </style>
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="contact">
+    <div
+      data-role="header"
+      style="
+        background-color: white;
+        color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        style="
+          width: 120px;
+          height: 120px;
+          background-image: url('pictlogo.jpg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        "
+      ></div>
+      <div style="text-align: center">
+        <h4 style="color: red; margin-bottom: 1px">
+          Society for Computer Technology and Research's
+        </h4>
+        <h2
+          style="
+            font-size: 30px;
+            letter-spacing: -1px;
+            margin-top: 1px;
+            margin-bottom: 1px;
+          "
+        >
+          PUNE INSTITUTE OF COMPUTER TECHNOLOGY
+        </h2>
+        <h4 style="color: red; margin-top: 1px">
+          (An Autonomous Institute affiliated to Savitribai Phule Pune
+          University)<br />AICTE APPROVED | ISO 9001:2015 | NAAC A+ Grade |
+          NBA [All Eligible UG Programs]
+        </h4>
+      </div>
+    </div>
+    
+        <div data-role="navbar" data-grid="c">
+            <ul>
+              <li>
+                <a
+                  href="index.html"
+                  style="color: white; background-color: blue !important"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  style="color: white; background-color: blue !important"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="department.html"
+                  style="color: white; background-color: blue !important"
+                  >Department</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  style="color: white; background-color: blue !important"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        <div data-role="content">
+            <h1>Vision</h1>
+            <p>Pune Institute of Computer Technology aspires to be the leader in Higher technical education and research of International repute.</p>
+        </div>
+        <div data-role="content">
+            <h1>Mission</h1>
+            <p>To be the leading and the most sought after institute of education and research in emerging engineering and technology disciplines that attract, retains and sustains gifted individuals of significant potential.</p>
+        </div>
+        <div data-role="content">
+           <p>Pune Institute of Computer Technology (popularly known as PICT), is an elite academic Institute located in Pune, “The Oxford of the East.” Since our establishment in 1983, PICT has been revolutionizing the education sector by nurturing skilled and industry-ready engineers.
+
+            PICT believes in value-based quality education in Information and Communication Technology (ICT). PICT constantly endeavours to achieve higher levels of technical ingenuity through our undergraduate (UG) programmes in Computer Engineering (CE), Electronics & Telecommunication Engineering (E&TE), and Information Technology (IT). Our postgraduate (PG) programmes in Computer Engineering, Data Science, Electronics & Communication (Wireless Communication Technology), and Information Technology promote a high-quality research environment in emerging technological domains. PICT is a Savitribai Phule Pune University (SPPU) recognized Research Center in Computer Engineering and Electronics & Telecommunication Engineering.
+            
+            PICT is a UGC Approved Institute, ISO 9001:2015 Certified, and is NAAC Accredited (4th Cycle) with A+ grade. All our UG programmes are NBA Accredited (CE and E&TE – 6 times, IT – 4 times). PICT is ranked 8th among private Engineering Institutions in India, 1st among all private Engineering Institutions in Maharashtra, and 4th among all Engineering Institutions, including IITs, NITs, and Govt. Colleges in Maharashtra (as per the EDU-RAND ranking- 2015). PICT is placed in the ranking band: 201 to 250 as per the NIRF 2021 Ranking.
+            
+            The students of PICT are always involved in creating and sustaining cutting-edge technology to surpass the competition. Specialized laboratories/centers with industry support, like Virtual FinTech Lab, SAS Language Lab, e-yantra IIT Bombay, National Instruments LabVIEW, AICTE-funded Center for Wireless Communication, Alumni-funded 3D Printer Lab, etc. enable PICT students to learn in an industry-focused environment.</p>
+        </div>
+        <div
+        data-role="footer"
+        style="color: white; background-color: blue !important"
+      >
+        <center>
+          <br />
+          <div class="ui-grid-b">
+            <div class="ui-block-a">
+              <h4 style="color: yellow; font-size: 20px">Address</h4>
+              Survey No. 27, Near Trimurti Chowk <br />Dhankwadi, Pune - 411043
+            </div>
+            <div class="ui-block-b">
+              <h4 style="color: yellow; font-size: 20px">Phone Number</h4>
+              +91 20 24371101<br />
+              Fax: +91 20 24364741
+            </div>
+            <div class="ui-block-c">
+              <h4 style="color: yellow; font-size: 20px">Email Address</h4>
+              registrar@pict.edu
+            </div>
+          </div>
+        </center>
+        <br />
+        <h4 style="color: yellow; font-size: 20px">Quick Links</h4>
+        <center>
+          <a
+            href="#home"
+            style="color: white; background-color: blue !important"
+            >Home</a
+          >&nbsp&nbsp&nbsp&nbsp
+          <a
+            href="#about"
+            style="color: white; background-color: blue !important"
+            >About</a
+          >&nbsp&nbsp&nbsp&nbsp
+          <a
+            href="#dept"
+            style="color: white; background-color: blue !important"
+            >Department</a
+          >&nbsp&nbsp&nbsp&nbsp
+          <a
+            href="#contact"
+            style="color: white; background-color: blue !important"
+            >Contact</a
+          >&nbsp&nbsp&nbsp&nbsp
+        </center>
+      </div>
+    </div>
+
+    <!-- Departments -->
+    <div data-role ="page" id="department">
+        <div data-role="header">
+            
+            <h6>Society for Computer Technology and Research's</h6>
+            <h1>PUNE INSTITUTE OF COMPUTER TECHNOLOGY</h1>
+        </div>
+        <div data-role="navbar" data-grid="c">
+            <ul>
+              <li>
+                <a
+                  href="#home"
+                  style="color: white; background-color: blue !important"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  style="color: white; background-color: blue !important"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#department"
+                  style="color: white; background-color: blue !important"
+                  >Department</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  style="color: white; background-color: blue !important"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li><a href="">First Year Engineering</a></li>
+                <li>Information Technology</li>
+                <li>Computer Engineering</li>
+                <li>Electronics and Telecommunication Engineering</li>
+            </ul>
+        </div>
+        <div
+        data-role="footer"
+        style="color: white; background-color: blue !important"
+      >
+        <center>
+          <br />
+          <div class="ui-grid-b">
+            <div class="ui-block-a">
+              <h4 style="color: yellow; font-size: 20px">Address</h4>
+              Survey No. 27, Near Trimurti Chowk <br />Dhankwadi, Pune - 411043
+            </div>
+            <div class="ui-block-b">
+              <h4 style="color: yellow; font-size: 20px">Phone Number</h4>
+              +91 20 24371101<br />
+              Fax: +91 20 24364741
+            </div>
+            <div class="ui-block-c">
+              <h4 style="color: yellow; font-size: 20px">Email Address</h4>
+              registrar@pict.edu
+            </div>
+          </div>
+        </center>
+        <br />
+        <h4 style="color: yellow; font-size: 20px">Quick Links</h4>
+        <center>
+          <a
+            href="#home"
+            style="color: white; background-color: blue !important"
+            >Home</a
+          >&nbsp&nbsp&nbsp&nbsp
+          <a
+            href="#about"
+            style="color: white; background-color: blue !important"
+            >About</a
+          >&nbsp&nbsp&nbsp&nbsp
+          <a
+            href="#dept"
+            style="color: white; background-color: blue !important"
+            >Department</a
+          >&nbsp&nbsp&nbsp&nbsp
+          <a
+            href="#contact"
+            style="color: white; background-color: blue !important"
+            >Contact</a
+          >&nbsp&nbsp&nbsp&nbsp
+        </center>
+      </div>
+    </div>
+
+    <div data-role="page" id="contact">
+      <div
+        data-role="header"
+        style="
+          background-color: white;
+          color: blue;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <div
+          style="
+            width: 120px;
+            height: 120px;
+            background-image: url('pictlogo.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+          "
+        ></div>
+        <div style="text-align: center">
+          <h4 style="color: red; margin-bottom: 1px">
+            Society for Computer Technology and Research's
+          </h4>
+          <h2
+            style="
+              font-size: 30px;
+              letter-spacing: -1px;
+              margin-top: 1px;
+              margin-bottom: 1px;
+            "
+          >
+            PUNE INSTITUTE OF COMPUTER TECHNOLOGY
+          </h2>
+          <h4 style="color: red; margin-top: 1px">
+            (An Autonomous Institute affiliated to Savitribai Phule Pune
+            University)<br />AICTE APPROVED | ISO 9001:2015 | NAAC A+ Grade |
+            NBA [All Eligible UG Programs]
+          </h4>
+        </div>
+      </div>
+      <div data-role="navbar" data-grid="c">
+        <ul>
+          <li>
+            <a
+              href="#home"
+              style="color: white; background-color: blue !important"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              style="color: white; background-color: blue !important"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#dept"
+              style="color: white; background-color: blue !important"
+              >Department</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              style="color: white; background-color: blue !important"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div data-role="content">
+        <label for="text-basic">Name</label>
+        <input type="text" name="text-basic" id="text-basic" />
+        <label for="text-basic">Email</label>
+        <input type="email" name="text-basic" id="text-basic" />
+        <label for="text-basic">Mobile</label>
+        <input type="text" name="text-basic" id="text-basic" />
+        <label for="text-basic">Address</label>
+        <input type="text" name="text-basic" id="text-basic" />
+        <label for="text-basic">Comment</label>
+        <input type="text" name="text-basic" id="text-basic" />
+        <button class="ui-btn-active">Submit</button>
+      </div>
+      <div
+        data-role="footer"
+        style="color: white; background-color: blue !important"
+      >
+        <center>
+          <br />
+          <div class="ui-grid-b">
+            <div class="ui-block-a">
+              <h4 style="color: yellow; font-size: 20px">Address</h4>
+              Survey No. 27, Near Trimurti Chowk <br />Dhankwadi, Pune - 411043
+            </div>
+            <div class="ui-block-b">
+              <h4 style="color: yellow; font-size: 20px">Phone Number</h4>
+              +91 20 24371101<br />
+              Fax: +91 20 24364741
+            </div>
+            <div class="ui-block-c">
+              <h4 style="color: yellow; font-size: 20px">Email Address</h4>
+              registrar@pict.edu
+            </div>
+          </div>
+        </center>
+        <br />
+        <h4 style="color: yellow; font-size: 20px">Quick Links</h4>
+        <center>
+          <a
+            href="#home"
+            style="color: white; background-color: blue !important"
+            >Home</a
+          >&nbsp&nbsp&nbsp&nbsp
+          <a
+            href="#about"
+            style="color: white; background-color: blue !important"
+            >About</a
+          >&nbsp&nbsp&nbsp&nbsp
+          <a
+            href="#dept"
+            style="color: white; background-color: blue !important"
+            >Department</a
+          >&nbsp&nbsp&nbsp&nbsp
+          <a
+            href="#contact"
+            style="color: white; background-color: blue !important"
+            >Contact</a
+          >&nbsp&nbsp&nbsp&nbsp
+        </center>
+      </div>
+    </div>
+</body>
+</html>
